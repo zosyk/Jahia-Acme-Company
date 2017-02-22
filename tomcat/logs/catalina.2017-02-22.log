@@ -1,0 +1,654 @@
+Feb 22, 2017 2:32:47 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-oracle/jre/lib/amd64/server:/usr/lib/jvm/java-6-oracle/jre/lib/amd64:/usr/lib/jvm/java-6-oracle/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Feb 22, 2017 2:32:47 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 2:32:47 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 2:32:47 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 674 ms
+Feb 22, 2017 2:32:47 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 22, 2017 2:32:47 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52
+Feb 22, 2017 2:32:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT
+Feb 22, 2017 2:32:50 PM org.apache.tomcat.websocket.server.WsSci onStartup
+INFO: JSR 356 WebSocket (Java WebSocket 1.0) support is not available when running on Java 6. To suppress this message, run Tomcat on Java 7, remove the WebSocket JARs from $CATALINA_HOME/lib or add the WebSocketJARs to the tomcat.util.scan.DefaultJarScanner.jarsToSkip property in $CATALINA_BASE/conf/catalina.properties. Note that the deprecated Tomcat 7 WebSocket API will be available. 
+Feb 22, 2017 2:33:22 PM org.artofsolving.jodconverter.office.ProcessPoolOfficeManager <init>
+INFO: ProcessManager implementation is LinuxProcessManager
+Feb 22, 2017 2:33:22 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 2:33:22 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 31609
+Feb 22, 2017 2:33:22 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess$6 attempt
+WARNING: office process died with exit code 81; restarting it
+Feb 22, 2017 2:33:22 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 2:33:22 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 31621
+Feb 22, 2017 2:33:23 PM org.artofsolving.jodconverter.office.OfficeConnection connect
+INFO: connected: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'
+Feb 22, 2017 2:36:39 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.6 ${buildNumber}...
+Feb 22, 2017 2:36:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/host-manager
+Feb 22, 2017 2:36:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/manager
+Feb 22, 2017 2:36:40 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 2:36:40 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 2:36:40 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 233021 ms
+Feb 22, 2017 2:37:11 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Feb 22, 2017 2:39:34 PM org.icepdf.core.pobjects.Document <clinit>
+WARNING: PDF write support was not found on the class path
+Feb 22, 2017 2:39:34 PM org.icepdf.core.pobjects.Catalog <clinit>
+INFO: ICEsoft ICEpdf Core 5.0.5 
+Feb 22, 2017 2:39:36 PM org.icepdf.core.pobjects.ImageStream <clinit>
+INFO: Levigo JBIG2 image library was not found on classpath
+Feb 22, 2017 2:43:44 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 2:45:57 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:005e50f6-99e4-41cb-be26-b80dc491e19a unexpectedly disconnected
+Feb 22, 2017 2:47:39 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:00:50 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:2e540eb9-fb5e-42ea-a174-1a59db7355f8 unexpectedly disconnected
+Feb 22, 2017 3:00:50 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:00:54 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:09:04 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:7192cb99-6ad4-4639-94b8-62767904093f unexpectedly disconnected
+Feb 22, 2017 3:09:04 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:09:04 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:7192cb99-6ad4-4639-94b8-62767904093f closed the connection
+Feb 22, 2017 3:09:08 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:09:54 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:03c58d99-0725-4135-874e-52c536e27624 unexpectedly disconnected
+Feb 22, 2017 3:09:54 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:09:55 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:03c58d99-0725-4135-874e-52c536e27624 closed the connection
+Feb 22, 2017 3:10:46 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:14:24 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:8f3e10bd-b206-4fa4-acb2-19182904a1e2 unexpectedly disconnected
+Feb 22, 2017 3:14:25 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:14:25 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:8f3e10bd-b206-4fa4-acb2-19182904a1e2 closed the connection
+Feb 22, 2017 3:15:00 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:23:49 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:0ca6249b-50da-4bc1-b94c-607485cbb5b8 unexpectedly disconnected
+Feb 22, 2017 3:23:54 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:25:08 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:2287dd7e-289a-4cdd-abe3-9e53b9047be8 unexpectedly disconnected
+Feb 22, 2017 3:25:12 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 3:35:04 PM org.artofsolving.jodconverter.office.OfficeConnection$1 disposing
+INFO: disconnected: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'
+Feb 22, 2017 3:35:05 PM org.artofsolving.jodconverter.office.PooledOfficeManager$1 disconnected
+WARNING: connection lost unexpectedly; attempting restart
+Feb 22, 2017 3:35:05 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess doEnsureProcessExited
+INFO: process exited with code 255
+Feb 22, 2017 3:35:06 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 3:35:06 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess$5 run
+SEVERE: could not restart process
+org.artofsolving.jodconverter.office.OfficeException: could not establish connection
+	at org.artofsolving.jodconverter.office.ManagedOfficeProcess.doStartProcessAndConnect(ManagedOfficeProcess.java:142)
+	at org.artofsolving.jodconverter.office.ManagedOfficeProcess.access$000(ManagedOfficeProcess.java:31)
+	at org.artofsolving.jodconverter.office.ManagedOfficeProcess$5.run(ManagedOfficeProcess.java:109)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.IllegalStateException: process with acceptString 'socket,host=127.0.0.1,port=2002' started but its pid could not be found
+	at org.artofsolving.jodconverter.office.OfficeProcess.start(OfficeProcess.java:97)
+	at org.artofsolving.jodconverter.office.OfficeProcess.start(OfficeProcess.java:61)
+	at org.artofsolving.jodconverter.office.ManagedOfficeProcess.doStartProcessAndConnect(ManagedOfficeProcess.java:119)
+	... 5 more
+Feb 22, 2017 3:45:56 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:6ff9b909-a8c8-45cb-b631-4c7fea2ff946 closed the connection
+Feb 22, 2017 4:17:15 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Feb 22, 2017 4:17:15 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:17:15 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:17:15 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 22, 2017 4:17:28 PM org.artofsolving.jodconverter.office.ProcessPoolOfficeManager stop
+INFO: stopping
+Feb 22, 2017 4:17:28 PM org.artofsolving.jodconverter.office.OfficeProcess forciblyTerminate
+INFO: trying to forcibly terminate process: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' (pid -2)
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [FileWatchdog] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [OfficeProcessThread-0] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [notificationQueueProcessor] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Transient File Reaper] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [DynamicPooledExecutor] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [ICEpdf-thread-image-pool] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [ICEpdf-thread-image-pool] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [ICEpdf-thread-image-pool] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [ICEpdf-thread-image-pool] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [ICEpdf-thread-image-pool] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [File Reaper] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [net.sf.ehcache.util.concurrent.Striped64.ThreadHashCode] (value [net.sf.ehcache.util.concurrent.Striped64$ThreadHashCode@63327ad9]) and a value of type [net.sf.ehcache.util.concurrent.Striped64.HashCode] (value [net.sf.ehcache.util.concurrent.Striped64$HashCode@71f6f70]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.jasper.runtime.JspFactoryImpl$1] (value [org.apache.jasper.runtime.JspFactoryImpl$1@20cd25b7]) and a value of type [java.util.LinkedList] (value [[org.apache.jasper.runtime.PageContextImpl@7c672233, org.apache.jasper.runtime.PageContextImpl@56f68213, org.apache.jasper.runtime.PageContextImpl@2edb1e52, org.apache.jasper.runtime.PageContextImpl@33a3b186, org.apache.jasper.runtime.PageContextImpl@3fdbeee6, org.apache.jasper.runtime.PageContextImpl@215ecb, org.apache.jasper.runtime.PageContextImpl@ed6617e, org.apache.jasper.runtime.PageContextImpl@1c9a9ece, org.apache.jasper.runtime.PageContextImpl@6b2ff50d, org.apache.jasper.runtime.PageContextImpl@19815f75]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.drools.core.common.UpgradableReentrantReadWriteLock$1] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$1@7ca20767]) and a value of type [org.drools.core.common.UpgradableReentrantReadWriteLock.LockRequestCounter] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$LockRequestCounter@71943b1d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.solr.schema.DateField.ThreadLocalDateFormat] (value [org.apache.solr.schema.DateField$ThreadLocalDateFormat@3ab5272c]) and a value of type [org.apache.solr.schema.DateField.ISO8601CanonicalDateFormat] (value [org.apache.solr.schema.DateField$ISO8601CanonicalDateFormat@6b2ed43a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [net.sf.ehcache.util.concurrent.Striped64.ThreadHashCode] (value [net.sf.ehcache.util.concurrent.Striped64$ThreadHashCode@63327ad9]) and a value of type [net.sf.ehcache.util.concurrent.Striped64.HashCode] (value [net.sf.ehcache.util.concurrent.Striped64$HashCode@4b1ed7d0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.jasper.runtime.JspFactoryImpl$1] (value [org.apache.jasper.runtime.JspFactoryImpl$1@20cd25b7]) and a value of type [java.util.LinkedList] (value [[org.apache.jasper.runtime.PageContextImpl@55eabf37, org.apache.jasper.runtime.PageContextImpl@26afdff2, org.apache.jasper.runtime.PageContextImpl@64979cb5, org.apache.jasper.runtime.PageContextImpl@1db162ab, org.apache.jasper.runtime.PageContextImpl@68c4d7c7, org.apache.jasper.runtime.PageContextImpl@53327f8d, org.apache.jasper.runtime.PageContextImpl@18542ca7, org.apache.jasper.runtime.PageContextImpl@3e3f946b, org.apache.jasper.runtime.PageContextImpl@40291cba]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.drools.core.common.UpgradableReentrantReadWriteLock$1] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$1@7ca20767]) and a value of type [org.drools.core.common.UpgradableReentrantReadWriteLock.LockRequestCounter] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$LockRequestCounter@4b1d183e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6322b4f8]) and a value of type [org.apache.commons.vfs2.provider.FileContentThreadData] (value [org.apache.commons.vfs2.provider.FileContentThreadData@7b9738a0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.drools.core.common.UpgradableReentrantReadWriteLock$1] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$1@506cfc4]) and a value of type [org.drools.core.common.UpgradableReentrantReadWriteLock.LockRequestCounter] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$LockRequestCounter@2324f70]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.drools.core.common.UpgradableReentrantReadWriteLock$1] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$1@34fd4330]) and a value of type [org.drools.core.common.UpgradableReentrantReadWriteLock.LockRequestCounter] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$LockRequestCounter@5f461f7d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [net.sf.ehcache.util.concurrent.Striped64.ThreadHashCode] (value [net.sf.ehcache.util.concurrent.Striped64$ThreadHashCode@63327ad9]) and a value of type [net.sf.ehcache.util.concurrent.Striped64.HashCode] (value [net.sf.ehcache.util.concurrent.Striped64$HashCode@74bd7868]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.jasper.runtime.JspFactoryImpl$1] (value [org.apache.jasper.runtime.JspFactoryImpl$1@20cd25b7]) and a value of type [java.util.LinkedList] (value [[org.apache.jasper.runtime.PageContextImpl@432c2fb8, org.apache.jasper.runtime.PageContextImpl@9f0fb7c, org.apache.jasper.runtime.PageContextImpl@6fcd9aa3, org.apache.jasper.runtime.PageContextImpl@23637cad, org.apache.jasper.runtime.PageContextImpl@588e5401, org.apache.jasper.runtime.PageContextImpl@682d3b12, org.apache.jasper.runtime.PageContextImpl@7181502c, org.apache.jasper.runtime.PageContextImpl@60b6b2eb, org.apache.jasper.runtime.PageContextImpl@7a9c93e7, org.apache.jasper.runtime.PageContextImpl@3db26194]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.drools.core.common.UpgradableReentrantReadWriteLock$1] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$1@7ca20767]) and a value of type [org.drools.core.common.UpgradableReentrantReadWriteLock.LockRequestCounter] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$LockRequestCounter@a245b31]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.solr.schema.DateField.ThreadLocalDateFormat] (value [org.apache.solr.schema.DateField$ThreadLocalDateFormat@3ab5272c]) and a value of type [org.apache.solr.schema.DateField.ISO8601CanonicalDateFormat] (value [org.apache.solr.schema.DateField$ISO8601CanonicalDateFormat@6b2ed43a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [net.sf.ehcache.util.concurrent.Striped64.ThreadHashCode] (value [net.sf.ehcache.util.concurrent.Striped64$ThreadHashCode@63327ad9]) and a value of type [net.sf.ehcache.util.concurrent.Striped64.HashCode] (value [net.sf.ehcache.util.concurrent.Striped64$HashCode@58def32a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.jasper.runtime.JspFactoryImpl$1] (value [org.apache.jasper.runtime.JspFactoryImpl$1@20cd25b7]) and a value of type [java.util.LinkedList] (value [[org.apache.jasper.runtime.PageContextImpl@152e77fb, org.apache.jasper.runtime.PageContextImpl@1dc70a9a, org.apache.jasper.runtime.PageContextImpl@216e96c9, org.apache.jasper.runtime.PageContextImpl@636d7744]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.drools.core.common.UpgradableReentrantReadWriteLock$1] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$1@7ca20767]) and a value of type [org.drools.core.common.UpgradableReentrantReadWriteLock.LockRequestCounter] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$LockRequestCounter@27b1445b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.drools.core.common.UpgradableReentrantReadWriteLock$1] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$1@506cfc4]) and a value of type [org.drools.core.common.UpgradableReentrantReadWriteLock.LockRequestCounter] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$LockRequestCounter@66fec6b8]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.drools.core.common.UpgradableReentrantReadWriteLock$1] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$1@34fd4330]) and a value of type [org.drools.core.common.UpgradableReentrantReadWriteLock.LockRequestCounter] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$LockRequestCounter@60a88edb]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [net.sf.ehcache.util.concurrent.Striped64.ThreadHashCode] (value [net.sf.ehcache.util.concurrent.Striped64$ThreadHashCode@63327ad9]) and a value of type [net.sf.ehcache.util.concurrent.Striped64.HashCode] (value [net.sf.ehcache.util.concurrent.Striped64$HashCode@5a3afd70]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.jasper.runtime.JspFactoryImpl$1] (value [org.apache.jasper.runtime.JspFactoryImpl$1@20cd25b7]) and a value of type [java.util.LinkedList] (value [[org.apache.jasper.runtime.PageContextImpl@56d4f257, org.apache.jasper.runtime.PageContextImpl@36725a4a, org.apache.jasper.runtime.PageContextImpl@4b212f34, org.apache.jasper.runtime.PageContextImpl@6fa22574, org.apache.jasper.runtime.PageContextImpl@7e491bed, org.apache.jasper.runtime.PageContextImpl@71c8a560, org.apache.jasper.runtime.PageContextImpl@2be17bfc, org.apache.jasper.runtime.PageContextImpl@6092f3e5, org.apache.jasper.runtime.PageContextImpl@4fca70eb, org.apache.jasper.runtime.PageContextImpl@73bb7d39]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.drools.core.common.UpgradableReentrantReadWriteLock$1] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$1@7ca20767]) and a value of type [org.drools.core.common.UpgradableReentrantReadWriteLock.LockRequestCounter] (value [org.drools.core.common.UpgradableReentrantReadWriteLock$LockRequestCounter@1a1a648b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [net.sf.ehcache.util.concurrent.Striped64.ThreadHashCode] (value [net.sf.ehcache.util.concurrent.Striped64$ThreadHashCode@63327ad9]) and a value of type [net.sf.ehcache.util.concurrent.Striped64.HashCode] (value [net.sf.ehcache.util.concurrent.Striped64$HashCode@3abeef10]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:17:30 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:17:30 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:17:30 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:17:30 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:26:47 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Feb 22, 2017 4:26:47 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:26:48 PM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:410)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:640)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:813)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:397)
+	... 17 more
+
+Feb 22, 2017 4:26:48 PM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:813)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:410)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:640)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:397)
+	... 17 more
+
+Feb 22, 2017 4:26:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:26:48 PM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-bio-8009"]
+java.net.BindException: Address already in use <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:410)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:640)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:813)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:397)
+	... 16 more
+
+Feb 22, 2017 4:26:48 PM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:813)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:410)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:640)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:397)
+	... 16 more
+
+Feb 22, 2017 4:26:48 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 784 ms
+Feb 22, 2017 4:26:48 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 22, 2017 4:26:48 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52
+Feb 22, 2017 4:26:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT
+Feb 22, 2017 4:26:52 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+Feb 22, 2017 4:26:52 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [] startup failed due to previous errors
+Feb 22, 2017 4:26:52 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [FileWatchdog] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:26:52 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [ErrorFileDumperThread] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:26:52 PM org.apache.catalina.loader.WebappClassLoader loadClass
+INFO: Illegal access: this web application instance has been stopped already.  Could not load java.lang.management.RuntimeMXBean.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1610)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1569)
+	at org.jahia.tools.jvm.ThreadMonitor.setDumpPrefix(ThreadMonitor.java:586)
+	at org.jahia.tools.jvm.ThreadMonitor.parseMBeanInfo(ThreadMonitor.java:533)
+	at org.jahia.tools.jvm.ThreadMonitor.<init>(ThreadMonitor.java:215)
+	at org.jahia.tools.jvm.ThreadMonitor.<init>(ThreadMonitor.java:206)
+	at org.jahia.tools.jvm.ThreadMonitor.getInstance(ThreadMonitor.java:230)
+	at org.jahia.bin.errors.ErrorFileDumper.outputSystemInfo(ErrorFileDumper.java:602)
+	at org.jahia.bin.errors.ErrorFileDumper.outputSystemInfoConsiderLoad(ErrorFileDumper.java:447)
+	at org.jahia.bin.errors.ErrorFileDumper.outputSystemInfo(ErrorFileDumper.java:429)
+	at org.jahia.bin.errors.ErrorFileDumper.generateErrorReport(ErrorFileDumper.java:416)
+	at org.jahia.bin.errors.ErrorFileDumper.performDumpToFile(ErrorFileDumper.java:330)
+	at org.jahia.bin.errors.ErrorFileDumper.access$000(ErrorFileDumper.java:112)
+	at org.jahia.bin.errors.ErrorFileDumper$FileDumperRunnable.run(ErrorFileDumper.java:211)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Feb 22, 2017 4:26:52 PM org.apache.catalina.loader.WebappClassLoader loadClass
+INFO: Illegal access: this web application instance has been stopped already.  Could not load org.apache.commons.lang.Validate.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1610)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1569)
+	at org.apache.commons.lang.time.FastDateFormat$PaddedNumberField.appendTo(FastDateFormat.java:1306)
+	at org.apache.commons.lang.time.FastDateFormat$PaddedNumberField.appendTo(FastDateFormat.java:1288)
+	at org.apache.commons.lang.time.FastDateFormat.applyRules(FastDateFormat.java:890)
+	at org.apache.commons.lang.time.FastDateFormat.format(FastDateFormat.java:821)
+	at org.jahia.tools.jvm.ThreadMonitor.getDumpDate(ThreadMonitor.java:512)
+	at org.jahia.tools.jvm.ThreadMonitor.dumpThreadInfo(ThreadMonitor.java:374)
+	at org.jahia.tools.jvm.ThreadMonitor.getFullThreadInfo(ThreadMonitor.java:526)
+	at org.jahia.tools.jvm.ThreadMonitor.generateThreadInfo(ThreadMonitor.java:498)
+	at org.jahia.bin.errors.ErrorFileDumper.outputSystemInfo(ErrorFileDumper.java:603)
+	at org.jahia.bin.errors.ErrorFileDumper.outputSystemInfoConsiderLoad(ErrorFileDumper.java:447)
+	at org.jahia.bin.errors.ErrorFileDumper.outputSystemInfo(ErrorFileDumper.java:429)
+	at org.jahia.bin.errors.ErrorFileDumper.generateErrorReport(ErrorFileDumper.java:416)
+	at org.jahia.bin.errors.ErrorFileDumper.performDumpToFile(ErrorFileDumper.java:330)
+	at org.jahia.bin.errors.ErrorFileDumper.access$000(ErrorFileDumper.java:112)
+	at org.jahia.bin.errors.ErrorFileDumper$FileDumperRunnable.run(ErrorFileDumper.java:211)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Feb 22, 2017 4:26:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/host-manager
+Feb 22, 2017 4:26:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/manager
+Feb 22, 2017 4:26:52 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4560 ms
+Feb 22, 2017 4:26:52 PM org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:426)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:777)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:723)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:321)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+
+Feb 22, 2017 4:26:52 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:26:52 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:26:52 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 22, 2017 4:26:52 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:26:52 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:26:52 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:26:52 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:29:07 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Feb 22, 2017 4:29:07 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:29:07 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:29:07 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 721 ms
+Feb 22, 2017 4:29:07 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 22, 2017 4:29:07 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52
+Feb 22, 2017 4:29:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT
+Feb 22, 2017 4:29:11 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+Feb 22, 2017 4:29:11 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [] startup failed due to previous errors
+Feb 22, 2017 4:29:11 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [FileWatchdog] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:29:11 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [ErrorFileDumperThread] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:29:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/host-manager
+Feb 22, 2017 4:29:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/manager
+Feb 22, 2017 4:29:11 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:29:11 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:29:11 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4266 ms
+Feb 22, 2017 4:30:16 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Feb 22, 2017 4:30:16 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:30:16 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:30:16 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 22, 2017 4:30:16 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:30:16 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:30:16 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:30:16 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:30:28 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-oracle/jre/lib/amd64/server:/usr/lib/jvm/java-6-oracle/jre/lib/amd64:/usr/lib/jvm/java-6-oracle/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Feb 22, 2017 4:30:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:30:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:30:29 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1472 ms
+Feb 22, 2017 4:30:29 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 22, 2017 4:30:29 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52
+Feb 22, 2017 4:30:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT
+Feb 22, 2017 4:30:32 PM org.apache.tomcat.websocket.server.WsSci onStartup
+INFO: JSR 356 WebSocket (Java WebSocket 1.0) support is not available when running on Java 6. To suppress this message, run Tomcat on Java 7, remove the WebSocket JARs from $CATALINA_HOME/lib or add the WebSocketJARs to the tomcat.util.scan.DefaultJarScanner.jarsToSkip property in $CATALINA_BASE/conf/catalina.properties. Note that the deprecated Tomcat 7 WebSocket API will be available. 
+Feb 22, 2017 4:30:53 PM org.artofsolving.jodconverter.office.ProcessPoolOfficeManager <init>
+INFO: ProcessManager implementation is LinuxProcessManager
+Feb 22, 2017 4:30:53 PM org.artofsolving.jodconverter.office.OfficeProcess prepareInstanceProfileDir
+WARNING: profile dir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002' already exists; deleting
+Feb 22, 2017 4:30:53 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 4:30:53 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 5263
+Feb 22, 2017 4:31:01 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess$6 attempt
+WARNING: office process died with exit code 81; restarting it
+Feb 22, 2017 4:31:01 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 4:31:01 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 5280
+Feb 22, 2017 4:31:01 PM org.artofsolving.jodconverter.office.OfficeConnection connect
+INFO: connected: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'
+Feb 22, 2017 4:32:00 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.6 ${buildNumber}...
+Feb 22, 2017 4:32:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/host-manager
+Feb 22, 2017 4:32:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/manager
+Feb 22, 2017 4:32:01 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:32:01 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:32:01 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 91486 ms
+Feb 22, 2017 4:32:42 PM org.artofsolving.jodconverter.office.OfficeConnection$1 disposing
+INFO: disconnected: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'
+Feb 22, 2017 4:32:42 PM org.artofsolving.jodconverter.office.PooledOfficeManager$1 disconnected
+WARNING: connection lost unexpectedly; attempting restart
+Feb 22, 2017 4:32:42 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess doEnsureProcessExited
+INFO: process exited with code 255
+Feb 22, 2017 4:32:42 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 4:32:42 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 5365
+Feb 22, 2017 4:32:43 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess$6 attempt
+WARNING: office process died with exit code 81; restarting it
+Feb 22, 2017 4:32:43 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 4:32:43 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 5377
+Feb 22, 2017 4:32:43 PM org.artofsolving.jodconverter.office.OfficeConnection connect
+INFO: connected: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'
+Feb 22, 2017 4:32:45 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Feb 22, 2017 4:32:45 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:32:45 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:32:45 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 22, 2017 4:32:56 PM org.artofsolving.jodconverter.office.ProcessPoolOfficeManager stop
+INFO: stopping
+Feb 22, 2017 4:32:56 PM org.artofsolving.jodconverter.office.OfficeConnection$1 disposing
+INFO: disconnected: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'
+Feb 22, 2017 4:32:57 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess doEnsureProcessExited
+INFO: process exited with code 0
+Feb 22, 2017 4:32:57 PM org.artofsolving.jodconverter.office.ProcessPoolOfficeManager stop
+INFO: stopped
+Feb 22, 2017 4:32:58 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [FileWatchdog] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:32:58 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [OfficeProcessThread-0] but has failed to stop it. This is very likely to create a memory leak.
+Feb 22, 2017 4:32:58 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.jasper.runtime.JspFactoryImpl$1] (value [org.apache.jasper.runtime.JspFactoryImpl$1@59effeb7]) and a value of type [java.util.LinkedList] (value [[org.apache.jasper.runtime.PageContextImpl@1b3bce82, org.apache.jasper.runtime.PageContextImpl@7372c6c5, org.apache.jasper.runtime.PageContextImpl@7457eab9, org.apache.jasper.runtime.PageContextImpl@37f3535b, org.apache.jasper.runtime.PageContextImpl@47e5980f, org.apache.jasper.runtime.PageContextImpl@326225a9, org.apache.jasper.runtime.PageContextImpl@49969416, org.apache.jasper.runtime.PageContextImpl@3cd45618, org.apache.jasper.runtime.PageContextImpl@186060db]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:32:58 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.jasper.runtime.JspFactoryImpl$1] (value [org.apache.jasper.runtime.JspFactoryImpl$1@59effeb7]) and a value of type [java.util.LinkedList] (value [[org.apache.jasper.runtime.PageContextImpl@5f76d65d, org.apache.jasper.runtime.PageContextImpl@72f3a4a1, org.apache.jasper.runtime.PageContextImpl@59bd80fc, org.apache.jasper.runtime.PageContextImpl@285f4e6b, org.apache.jasper.runtime.PageContextImpl@9156782, org.apache.jasper.runtime.PageContextImpl@5c3e8c76, org.apache.jasper.runtime.PageContextImpl@e77c64a, org.apache.jasper.runtime.PageContextImpl@597b2bb1, org.apache.jasper.runtime.PageContextImpl@25719f5c, org.apache.jasper.runtime.PageContextImpl@46956438]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Feb 22, 2017 4:32:58 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:32:58 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 4:32:58 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 4:32:58 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 7:28:48 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-oracle/jre/lib/amd64/server:/usr/lib/jvm/java-6-oracle/jre/lib/amd64:/usr/lib/jvm/java-6-oracle/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Feb 22, 2017 7:28:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 7:28:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 7:28:50 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2202 ms
+Feb 22, 2017 7:28:50 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 22, 2017 7:28:50 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52
+Feb 22, 2017 7:28:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT
+Feb 22, 2017 7:28:58 PM org.apache.tomcat.websocket.server.WsSci onStartup
+INFO: JSR 356 WebSocket (Java WebSocket 1.0) support is not available when running on Java 6. To suppress this message, run Tomcat on Java 7, remove the WebSocket JARs from $CATALINA_HOME/lib or add the WebSocketJARs to the tomcat.util.scan.DefaultJarScanner.jarsToSkip property in $CATALINA_BASE/conf/catalina.properties. Note that the deprecated Tomcat 7 WebSocket API will be available. 
+Feb 22, 2017 7:29:28 PM org.artofsolving.jodconverter.office.ProcessPoolOfficeManager <init>
+INFO: ProcessManager implementation is LinuxProcessManager
+Feb 22, 2017 7:29:28 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 7:29:28 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 3583
+Feb 22, 2017 7:29:35 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess$6 attempt
+WARNING: office process died with exit code 81; restarting it
+Feb 22, 2017 7:29:35 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 7:29:35 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 3598
+Feb 22, 2017 7:29:36 PM org.artofsolving.jodconverter.office.OfficeConnection connect
+INFO: connected: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'
+Feb 22, 2017 7:30:43 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.6 ${buildNumber}...
+Feb 22, 2017 7:30:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/host-manager
+Feb 22, 2017 7:30:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/manager
+Feb 22, 2017 7:30:44 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Feb 22, 2017 7:30:44 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Feb 22, 2017 7:30:44 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 114612 ms
+Feb 22, 2017 7:51:51 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource onReady
+INFO: Received RPC GET
+Feb 22, 2017 7:52:36 PM org.jahia.ajax.gwt.commons.server.ManagedGWTResource disconnected
+INFO: User:332c6ce1-c55d-46f8-afc1-3d74f4da2639 closed the connection
+Feb 22, 2017 7:52:39 PM org.artofsolving.jodconverter.office.OfficeConnection$1 disposing
+INFO: disconnected: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'
+Feb 22, 2017 7:52:39 PM org.artofsolving.jodconverter.office.PooledOfficeManager$1 disconnected
+WARNING: connection lost unexpectedly; attempting restart
+Feb 22, 2017 7:52:39 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess doEnsureProcessExited
+INFO: process exited with code 255
+Feb 22, 2017 7:52:39 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 7:52:39 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 3904
+Feb 22, 2017 7:52:39 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess$6 attempt
+WARNING: office process died with exit code 81; restarting it
+Feb 22, 2017 7:52:39 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1' and profileDir '/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/.jodconverter_socket_host-127.0.0.1_port-2002'
+Feb 22, 2017 7:52:39 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 3916
+Feb 22, 2017 7:52:40 PM org.artofsolving.jodconverter.office.OfficeConnection connect
+INFO: connected: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'

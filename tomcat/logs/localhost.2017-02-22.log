@@ -1,0 +1,208 @@
+Feb 22, 2017 2:32:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Feb 22, 2017 2:32:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Set web app root system property: 'webapp.root' = [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/]
+Feb 22, 2017 2:32:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing log4j from [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/etc/config/log4j.xml]
+Feb 22, 2017 2:32:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Feb 22, 2017 2:37:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'RendererDispatcherServlet'
+Feb 22, 2017 2:37:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'GWTDispatcherServlet'
+Feb 22, 2017 2:37:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'FlowDispatcherServlet'
+Feb 22, 2017 4:17:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'RendererDispatcherServlet'
+Feb 22, 2017 4:17:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'FlowDispatcherServlet'
+Feb 22, 2017 4:17:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'GWTDispatcherServlet'
+Feb 22, 2017 4:17:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+Feb 22, 2017 4:17:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Shutting down log4j
+Feb 22, 2017 4:26:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Feb 22, 2017 4:26:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Set web app root system property: 'webapp.root' = [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/]
+Feb 22, 2017 4:26:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing log4j from [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/etc/config/log4j.xml]
+Feb 22, 2017 4:26:52 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.jahia.bin.listeners.JahiaContextLoaderListener
+org.jahia.exceptions.JahiaRuntimeException: org.jahia.exceptions.JahiaInitializationException: User message=Initialization error., System message=WARNING
+
+You are using an unsupported JDK version
+or have an invalid supported_jdk_versions parameter string in 
+the deployment descriptor file web.xml.
+
+
+Here is the range specified in the web.xml file : 1.6 <= x < 1.8.
+
+If you want to disable this warning, remove the supported_jdk_versions
+
+initialization parameter in the WEB-INF/web.xml
+
+
+
+Please note that if you deactivate this check or use unsupported versions
+
+
+You might run into serious problems and we cannot offer support for these.
+
+
+You may download a supported JDK from Oracle site: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+&nbsp;
+
+	at org.jahia.bin.listeners.JahiaContextLoaderListener.contextInitialized(JahiaContextLoaderListener.java:207)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1229)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1875)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jahia.exceptions.JahiaInitializationException: User message=Initialization error., System message=WARNING
+
+You are using an unsupported JDK version
+or have an invalid supported_jdk_versions parameter string in 
+the deployment descriptor file web.xml.
+
+
+Here is the range specified in the web.xml file : 1.6 <= x < 1.8.
+
+If you want to disable this warning, remove the supported_jdk_versions
+
+initialization parameter in the WEB-INF/web.xml
+
+
+
+Please note that if you deactivate this check or use unsupported versions
+
+
+You might run into serious problems and we cannot offer support for these.
+
+
+You may download a supported JDK from Oracle site: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+&nbsp;
+
+	at org.jahia.bin.Jahia.verifyJavaVersion(Jahia.java:313)
+	at org.jahia.bin.listeners.JahiaContextLoaderListener.contextInitialized(JahiaContextLoaderListener.java:205)
+	... 13 more
+
+Feb 22, 2017 4:26:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Shutting down log4j
+Feb 22, 2017 4:29:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Feb 22, 2017 4:29:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Set web app root system property: 'webapp.root' = [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/]
+Feb 22, 2017 4:29:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing log4j from [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/etc/config/log4j.xml]
+Feb 22, 2017 4:29:11 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.jahia.bin.listeners.JahiaContextLoaderListener
+org.jahia.exceptions.JahiaRuntimeException: org.jahia.exceptions.JahiaInitializationException: User message=Initialization error., System message=WARNING
+
+You are using an unsupported JDK version
+or have an invalid supported_jdk_versions parameter string in 
+the deployment descriptor file web.xml.
+
+
+Here is the range specified in the web.xml file : 1.6 <= x < 1.8.
+
+If you want to disable this warning, remove the supported_jdk_versions
+
+initialization parameter in the WEB-INF/web.xml
+
+
+
+Please note that if you deactivate this check or use unsupported versions
+
+
+You might run into serious problems and we cannot offer support for these.
+
+
+You may download a supported JDK from Oracle site: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+&nbsp;
+
+	at org.jahia.bin.listeners.JahiaContextLoaderListener.contextInitialized(JahiaContextLoaderListener.java:207)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:632)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1229)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1875)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jahia.exceptions.JahiaInitializationException: User message=Initialization error., System message=WARNING
+
+You are using an unsupported JDK version
+or have an invalid supported_jdk_versions parameter string in 
+the deployment descriptor file web.xml.
+
+
+Here is the range specified in the web.xml file : 1.6 <= x < 1.8.
+
+If you want to disable this warning, remove the supported_jdk_versions
+
+initialization parameter in the WEB-INF/web.xml
+
+
+
+Please note that if you deactivate this check or use unsupported versions
+
+
+You might run into serious problems and we cannot offer support for these.
+
+
+You may download a supported JDK from Oracle site: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+&nbsp;
+
+	at org.jahia.bin.Jahia.verifyJavaVersion(Jahia.java:313)
+	at org.jahia.bin.listeners.JahiaContextLoaderListener.contextInitialized(JahiaContextLoaderListener.java:205)
+	... 13 more
+
+Feb 22, 2017 4:29:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Shutting down log4j
+Feb 22, 2017 4:30:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Feb 22, 2017 4:30:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Set web app root system property: 'webapp.root' = [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/]
+Feb 22, 2017 4:30:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing log4j from [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/etc/config/log4j.xml]
+Feb 22, 2017 4:30:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Feb 22, 2017 4:32:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'RendererDispatcherServlet'
+Feb 22, 2017 4:32:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'RendererDispatcherServlet'
+Feb 22, 2017 4:32:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+Feb 22, 2017 4:32:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Shutting down log4j
+Feb 22, 2017 7:28:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Feb 22, 2017 7:28:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Set web app root system property: 'webapp.root' = [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/]
+Feb 22, 2017 7:28:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing log4j from [/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/etc/config/log4j.xml]
+Feb 22, 2017 7:29:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Feb 22, 2017 7:51:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'RendererDispatcherServlet'
+Feb 22, 2017 7:51:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'GWTDispatcherServlet'

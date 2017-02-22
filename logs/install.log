@@ -1,0 +1,40 @@
+
+calltarget:
+
+copy-modules:
+
+jahia-configure:
+     [echo] Configuring Digital Factory...
+     [java] 
+     [java] Digital Factory 7.0 Configuration Tool
+     [java] Copyright 2002-2014 - Jahia Solutions Group SA http://www.jahia.com - All Rights Reserved
+     [java] 
+     [java] Started Jahia global configurator
+     [java] Feb 22, 2017 2:25:17 PM org.apache.commons.vfs.VfsLog info
+     [java] INFO: Using "/tmp/vfs_cache" as temporary files store.
+     [java] Loaded configuration from file /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/logs/install.properties:
+     [java] {databaseDriverClass=org.apache.derby.jdbc.EmbeddedDriver, jahiaRootLastname=, databaseUsername=, databaseType=derby_embedded, mailFrom=, jahiaToolManagerUsername=jahia, databaseUrl=jdbc:derby:directory:jahia;create=true, targetServerDirectory=/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat, mailServer=***, jahiaProperties="documentConverter.enabled":"true","documentConverter.officeHome":"/usr/lib/libreoffice","jahia.dm.viewer.enabled":"false","jahia.dm.viewer.pdf2swf":"","jahia.dm.thumbnails.video.enabled":"true","jahia.dm.thumbnails.video.ffmpeg":"/usr/bin/ffmpeg","imageService":"ImageMagickImageService","imageMagickPath":"/usr/bin","gitPath":"git","mvnPath":"mvn","svnPath":"svn","org.jahia.multilang.default_language_code":"en", db_script=derby_embedded.script, storeFilesInDB=false, externalizedConfigClassifier=, externalizedConfigTargetPath=, jahiaRootEmail=, operatingMode=development, targetServerType=tomcat, jahiaRootPassword=***, overwritedb=true, webAppDirName=ROOT, jahiaRootFirstname=, mailAdministrator=, externalizedConfigActivated=false, jahiaRootPreferredLang=en, jahiaRootUsername=root, databasePassword=***, jahiaToolManagerPassword=***}
+     [java] Configuring for server tomcat with database type derby_embedded
+     [java] Deployed in standalone for server in /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT
+     [java] Updating configuration files...
+     [java] Configuring file using source /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT to target /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT
+     [java] Configuring Jackrabbit binary storage using data store. Store files in DB: false. File data store path: ${rep.home}/datastore.
+     [java] Copying license file...
+     [java] Creating database tables...
+     [java] Loading statements from script file /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/db/sql/schema/derby/jbpm-schema.sql
+     [java] Loading statements from script file /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/db/sql/schema/derby/quartz-schema.sql
+     [java] Loading statements from script file /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/db/sql/schema/derby/jahia-schema.sql
+     [java] Loading statements from script file /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/db/sql/schema/derby/jackrabbit-schema.sql
+     [java] Loading statements from script file /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/db/sql/schema/derby/jahia-external-provider-schema.sql
+     [java] Loading statements from script file /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/db/sql/schema/derby/jgroups-schema.sql
+     [java] Shutting down embedded Derby...
+     [java] ...done shutting down Derby.
+     [java] Finished deleting content of the data and cache related folders
+     [java] Finished deleting content of Tomcat's /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp and /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/work folders
+     [java] No site import found, no import needed.
+     [java] ...finished job of Jahia global configurator.
+     [echo] ...done configuring Digital Factory.
+
+cleanup:
+   [delete] Deleting directory /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tools
+[propertyfile] Updating property file: /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/logs/install.properties

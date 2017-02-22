@@ -1,0 +1,1690 @@
+
+Your Server has generated an error. Please review the details below for additional information: 
+
+
+Error: /sites/ACMESPACE/home/about-us/main/dog
+
+
+Stack trace:
+-------------
+Cause level : 0 (level 0 is the most precise exception)
+javax.jcr.PathNotFoundException: /sites/ACMESPACE/home/about-us/main/dog
+	at org.apache.jackrabbit.core.ItemManager.getItem(ItemManager.java:553)
+	at org.apache.jackrabbit.core.session.SessionItemOperation$4.perform(SessionItemOperation.java:97)
+	at org.apache.jackrabbit.core.session.SessionItemOperation$4.perform(SessionItemOperation.java:93)
+	at org.apache.jackrabbit.core.session.SessionItemOperation.perform(SessionItemOperation.java:187)
+	at org.apache.jackrabbit.core.session.SessionState.perform(SessionState.java:216)
+	at org.apache.jackrabbit.core.SessionImpl.perform(SessionImpl.java:361)
+	at org.apache.jackrabbit.core.SessionImpl.getItem(SessionImpl.java:794)
+	at org.jahia.services.content.JCRSessionWrapper.getItem(JCRSessionWrapper.java:363)
+	at org.jahia.services.content.JCRSessionWrapper.getNode(JCRSessionWrapper.java:417)
+	at org.jahia.services.content.JCRSessionWrapper.getNode(JCRSessionWrapper.java:413)
+	at org.jahia.ajax.gwt.helper.NavigationHelper.getUsages(NavigationHelper.java:551)
+	at org.jahia.ajax.gwt.content.server.JahiaContentManagementServiceImpl.getUsages(JahiaContentManagementServiceImpl.java:1119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:561)
+	at com.google.gwt.user.server.rpc.RPC.invokeAndEncodeResponse(RPC.java:545)
+	at org.jahia.ajax.gwt.commons.server.GWTController.processCall(GWTController.java:167)
+	at com.google.gwt.user.server.rpc.RemoteServiceServlet.processPost(RemoteServiceServlet.java:248)
+	at com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet.doPost(AbstractRemoteServiceServlet.java:62)
+	at org.jahia.ajax.gwt.commons.server.GWTController.handleRequest(GWTController.java:146)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+	at org.jahia.services.seo.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:151)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.jahia.bin.filters.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:65)
+	at org.jahia.bin.filters.CompositeFilter.doFilter(CompositeFilter.java:47)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.jahia.bin.filters.jcr.JcrSessionFilter.doFilter(JcrSessionFilter.java:133)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.jahia.bin.filters.PassThroughFilter.doFilter(PassThroughFilter.java:97)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.jahia.bin.filters.PassThroughFilter.doFilter(PassThroughFilter.java:97)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.jahia.bin.filters.MaintenanceFilter.doFilter(MaintenanceFilter.java:121)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:343)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:260)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:662)
+
+
+System properties:
+-------------------
+   catalina.base : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat
+   catalina.home : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat
+   catalina.useNaming : true
+   cluster.activated : false
+   cluster.node.serverId : jahiaServer1
+   common.loader : ${catalina.base}/lib,${catalina.base}/lib/*.jar,${catalina.home}/lib,${catalina.home}/lib/*.jar
+   derby.system.home : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/dbdata
+   file.encoding : UTF-8
+   file.encoding.pkg : sun.io
+   file.separator : /
+   jahia.config : 
+   jahia.jackrabbit.consistencyCheck : false
+   jahia.jackrabbit.consistencyFix : false
+   jahia.jackrabbit.onWorkspaceInconsistency : log
+   jahia.jackrabbit.searchIndex.autoRepair : true
+   jahia.jackrabbit.searchIndex.enableConsistencyCheck : false
+   jahia.jackrabbit.searchIndex.forceConsistencyCheck : false
+   jahia.license : 
+   jahia.log.dir : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/logs/
+   jahiaWebAppRoot : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/
+   java.awt.graphicsenv : sun.awt.X11GraphicsEnvironment
+   java.awt.headless : true
+   java.awt.printerjob : sun.print.PSPrinterJob
+   java.class.path : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/bin/bootstrap.jar:/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/bin/tomcat-juli.jar
+   java.class.version : 50.0
+   java.endorsed.dirs : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/endorsed
+   java.ext.dirs : /usr/lib/jvm/java-6-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+   java.home : /usr/lib/jvm/java-6-oracle/jre
+   java.io.tmpdir : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp
+   java.library.path : /usr/lib/jvm/java-6-oracle/jre/lib/amd64/server:/usr/lib/jvm/java-6-oracle/jre/lib/amd64:/usr/lib/jvm/java-6-oracle/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+   java.naming.factory.initial : org.apache.naming.java.javaURLContextFactory
+   java.naming.factory.url.pkgs : org.apache.naming
+   java.net.preferIPv4Stack : true
+   java.runtime.name : Java(TM) SE Runtime Environment
+   java.runtime.version : 1.6.0_45-b06
+   java.specification.name : Java Platform API Specification
+   java.specification.vendor : Sun Microsystems Inc.
+   java.specification.version : 1.6
+   java.util.logging.config.file : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/conf/logging.properties
+   java.util.logging.manager : org.apache.juli.ClassLoaderLogManager
+   java.vendor : Sun Microsystems Inc.
+   java.vendor.url : http://java.sun.com/
+   java.vendor.url.bug : http://java.sun.com/cgi-bin/bugreport.cgi
+   java.version : 1.6.0_45
+   java.vm.info : mixed mode
+   java.vm.name : Java HotSpot(TM) 64-Bit Server VM
+   java.vm.specification.name : Java Virtual Machine Specification
+   java.vm.specification.vendor : Sun Microsystems Inc.
+   java.vm.specification.version : 1.0
+   java.vm.vendor : Sun Microsystems Inc.
+   java.vm.version : 20.45-b01
+   jboss.i18n.generate-proxies : true
+   line.separator : 
+
+   mail.mime.decodefilename : true
+   org.apache.catalina.STRICT_SERVLET_COMPLIANCE : false
+   org.apache.catalina.startup.ContextConfig.jarsToSkip : *.jar
+   org.apache.catalina.startup.TldConfig.jarsToSkip : tomcat7-websocket.jar
+   org.apache.jackrabbit.api.stats.QueryStat : true
+   org.apache.jackrabbit.core.util.RepositoryLock:/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/repository : org.apache.jackrabbit.core.util.RepositoryLock:/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/repository
+   org.jahia.TldConfig.jarsToSkip : Saxon-HE-9.4.0.6.jar,abdera-core-1.1.3.jar,abdera-i18n-1.1.3.jar,abdera-parser-1.1.3.jar,annotations-2.0.1.jar,antlr-2.7.7.jar,antlr-runtime-3.5.jar,aopalliance-1.0.jar,apache-mime4j-core-0.7.2.jar,apache-mime4j-dom-0.7.2.jar,asm-4.1.jar,asm-analysis-4.1.jar,asm-commons-4.1.jar,asm-debug-all-4.1.jar,asm-tree-4.1.jar,asm-util-4.1.jar,aspectjrt-1.6.11.jar,atmosphere-compat-tomcat-2.0.1.jar,atmosphere-gwt20-client-2.1.1.jar,atmosphere-gwt20-common-2.1.1.jar,atmosphere-gwt20-managed-2.1.1.jar,atmosphere-gwt20-server-2.1.1.jar,atmosphere-runtime-2.1.1.jar,axiom-api-1.2.14.jar,axiom-impl-1.2.14.jar,bcmail-jdk15-1.45.jar,bcprov-jdk15-1.45.jar,boilerpipe-1.1.0.jar,cal10n-api-0.7.4.jar,camel-atom-2.12.3.jar,camel-core-2.12.3.jar,camel-mail-2.12.3.jar,camel-rss-2.12.3.jar,camel-script-2.12.3.jar,camel-spring-2.12.3.jar,camel-stream-2.12.3.jar,ccpp-1.0.jar,cdi-api-1.0-SP4.jar,cglib-nodep-2.2.2.jar,classmate-0.8.0.jar,commons-beanutils-1.8.3.jar,commons-chain-1.1.jar,commons-codec-1.8.jar,commons-collections-3.2.1.jar,commons-compress-1.5.jar,commons-dbcp-1.3.jar,commons-digester-1.8.jar,commons-discovery-0.5.jar,commons-exec-1.2.jar,commons-fileupload-1.3.1.jar,commons-httpclient-3.1.jar,commons-id-0.1-dev.jar,commons-io-2.4.jar,commons-jexl-1.1.jar,commons-jxpath-1.3.jar,commons-lang-2.6.jar,commons-logging-1.1.1.jar,commons-math-2.2.jar,commons-net-2.2.jar,commons-pool-1.5.4.jar,commons-validator-1.3.1.jar,commons-vfs2-2.0.jar,commons-vfs2-sandbox-2.0.jar,concurrent-1.3.4-jahia6.jar,daisydiff-1.1-nodeps.jar,deployers-4.0.jar,derby-*.jar,derbyclient-*.jar,diffutils-1.3.0-20120702.jar,dom4j-1.6.1.jar,drools-compiler-6.0.0.Final.jar,drools-core-6.0.0.Final.jar,drools-decisiontables-6.0.0.Final.jar,drools-persistence-jpa-6.0.0.Final.jar,drools-templates-6.0.0.Final.jar,ecj-3.7.2.jar,eclipse-core-runtime-20070801.jar,ehcache-2.8.1.jar,ehcache-sizeof-agent*.jar,fontbox-1.8.4.jar,freemarker-2.3.16.jar,groovy-2.2.1.jar,groovy-json-2.2.1.jar,groovy-jsr223-2.2.1.jar,groovy-xml-2.2.1.jar,guava-15.0-cdi1.0.jar,gwt-log-3.1.0.jar,gwt-servlet-2.5.1.jar,gxt-2.3.1-gwt22.jar,hibernate-commons-annotations-4.0.2.Final.jar,hibernate-core-4.2.7.SP1.jar,hibernate-ehcache-4.2.7.SP1.jar,hibernate-entitymanager-4.2.7.SP1.jar,hibernate-jpa-2.0-api-1.0.1.Final.jar,hibernate-validator-5.0.1.Final.jar,hibernate-validator-annotation-processor-5.0.1.Final.jar,icu4j-4.0.1.jar,im4java-1.4.0.jar,imagej-1.47.jar,isoparser-1.0-RC-1.jar,jackrabbit-api-2.4.5-jahia2.jar,jackrabbit-core-2.4.5-jahia2.jar,jackrabbit-jcr-commons-2.4.5-jahia2.jar,jackrabbit-jcr-rmi-2.4.5-jahia2.jar,jackrabbit-jcr-server-2.4.5-jahia2.jar,jackrabbit-jcr-servlet-2.4.5-jahia2.jar,jackrabbit-spi-2.4.5-jahia2.jar,jackrabbit-spi-commons-2.4.5-jahia2.jar,jackrabbit-webapp-2.4.5-jahia2.jar,jackrabbit-webdav-2.4.5-jahia2.jar,jackson-annotations-2.2.3.jar,jackson-core-2.2.3.jar,jackson-databind-2.2.3.jar,jahia-api-7.0.0.0.jar,jahia-commons-1.0.4.jar,jahia-gwt-7.0.0.0.jar,jahia-impl-7.0.0.0.jar,jakarta-regexp-1.4.jar,jasypt-1.9.1-lite.jar,javassist-3.18.1-GA.jar,javax.inject-1.jar,jaxen-1.1.1.jar,jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar,jboss-logging-3.1.0.GA.jar,jboss-modules.jar,jboss-transaction-api_1.1_spec-1.0.1.Final.jar,jbpm-audit-6.0.0.Final-jahia.jar,jbpm-bpmn2-6.0.0.Final.jar,jbpm-executor-6.0.0.Final-nocdi.jar,jbpm-flow-6.0.0.Final.jar,jbpm-flow-builder-6.0.0.Final.jar,jbpm-human-task-audit-6.0.0.Final-nocdi.jar,jbpm-human-task-core-6.0.0.Final-jahia-nocdi.jar,jbpm-human-task-workitems-6.0.0.Final-nocdi.jar,jbpm-persistence-jpa-6.0.0.Final.jar,jbpm-runtime-manager-6.0.0.Final-nocdi.jar,jbpm-shared-services-6.0.0.Final-jahia-nocdi.jar,jbpm-workitems-6.0.0.Final.jar,jcl-over-slf4j-1.6.4.jar,jcommon-1.0.14.jar,jcr-2.0.jar,jdom-1.1.jar,jempbox-1.8.4.jar,jericho-html-3.3.jar,jhighlight-1.0.jar,jlibdiff-1.01.jar,jline-0.9.94.jar,joda-time-1.6.jar,jodconverter-core-3.0-beta-4-jahia4.jar,js-1.7R2.jar,json-20070829.jar,jsr223-freemarker-engine-1.1.jar,jsr223-js-engine-1.1.jar,jsr223-velocity-engine-1.1.jar,jsr250-api-1.0.jar,jstl-1.1.2.jar,jta-1.1.jar,juel-impl-2.2.1.jar,juel-spi-2.2.1.jar,juh-3.2.1.jar,juniversalchardet-1.0.3.jar,jurt-3.2.1.jar,kaptcha-2.3.jar,kie-api-6.0.0.Final.jar,kie-internal-6.0.0.Final.jar,kie-spring-6.0.0.Final-jahia.jar,log4j-1.2.17.jar,lucene-analyzers-3.0.3.jar,lucene-core-3.0.3.jar,lucene-highlighter-3.0.3.jar,lucene-memory-3.0.3.jar,lucene-misc-3.1.0.jar,lucene-queries-3.1.0.jar,lucene-snowball-3.0.3.jar,lucene-spatial-3.1.0.jar,lucene-spellchecker-3.0.3.jar,mail-1.4.7.jar,maven-model-3.0.5.jar,maven-scm-api-1.4.jar,maven-scm-provider-svn-commons-1.4.jar,maven-scm-provider-svnexe-1.4.jar,metadata-extractor-2.6.2.jar,mvel2-2.1.7.Final.jar,mysql-connector-java-*.jar,neethi-3.0.2.jar,nekohtml-1.9.20.jar,netcdf-4.2-min.jar,ojdbc6-*.jar,opencsv-2.3.jar,opensearch-0.1.jar,orai18n-*.jar,org.apache.felix.framework-4.2.1.jar,org.apache.felix.http.proxy-2.2.1.jar,oro-2.0.8.jar,pdfbox-1.8.4.jar,phloc-commons-4.0.9.jar,phloc-css-3.6.0.jar,plexus-utils-2.0.6.jar,pluto-container-2.0.2.jar,pluto-container-api-2.0.2.jar,pluto-container-driver-api-2.0.2.jar,pluto-portal-driver-2.0.2.jar,pluto-portal-driver-impl-2.0.2.jar,pluto-taglib-2.0.2.jar,pluto-util-2.0.2.jar,poi-3.10-FINAL.jar,poi-ooxml-3.10-FINAL.jar,poi-ooxml-schemas-3.10-FINAL.jar,poi-scratchpad-3.10-FINAL.jar,portals-bridges-common-1.0.4.jar,portlet-api_2.0_spec-1.0.jar,postgresql-*.jar,protobuf-java-2.5.0.jar,quartz-1.8.6.jar,regexp-1.3.jar,ridl-3.2.1.jar,rome-1.0.jar,rome-fetcher-1.0.jar,seam-transaction-api-3.1.0.Final.jar,serializer-2.7.1.jar,shiro-core-1.1.0.jar,shiro-spring-1.1.0.jar,slf4j-api-1.6.6.jar,slf4j-ext-1.6.6.jar,slf4j-log4j12-1.6.6.jar,smack-3.1.0.jar,solder-api-3.2.1.Final.jar,solder-logging-3.2.1.Final.jar,solr-commons-csv-3.1.0.jar,solr-core-3.1.0.jar,solr-noggit-3.1.0.jar,solr-solrj-3.1.0.jar,spring-aop-3.2.8.RELEASE.jar,spring-beans-3.2.8.RELEASE.jar,spring-binding-2.3.2.RELEASE.jar,spring-context-3.2.8.RELEASE.jar,spring-context-support-3.2.8.RELEASE.jar,spring-core-3.2.8.RELEASE.jar,spring-expression-3.2.8.RELEASE.jar,spring-jdbc-3.2.8.RELEASE.jar,spring-js-2.3.2.RELEASE.jar,spring-js-resources-2.3.2.RELEASE.jar,spring-orm-3.2.8.RELEASE.jar,spring-tx-3.2.8.RELEASE.jar,spring-web-3.2.8.RELEASE.jar,spring-webflow-2.3.2.RELEASE.jar,sqljdbc4-*.jar,stax-1.2.0.jar,stax-api-1.0-2.jar,stax2-api-3.0.2.jar,tagsoup-1.2.1.jar,tika-core-1.5.jar,tika-parsers-1.5.jar,unoil-3.2.1.jar,urlrewritefilter-3.2.0.jar,validation-api-1.1.0.Final.jar,velocity-1.6.4.jar,vorbis-java-core-0.1.jar,vorbis-java-tika-0.1.jar,woodstox-core-asl-4.0.8.jar,wsdl4j-1.6.2.jar,wstx-asl-3.2.7.jar,xalan-2.7.1.jar,xercesImpl-2.11.0.jar,xmlParserAPIs-2.11.0.jar,xmlbeans-2.3.0.jar,xmlpull-1.1.3.1.jar,xmlschema-core-2.0.3.jar,xmpcore-5.1.2.jar,xom-1.0.jar,xpp3_min-1.1.4c.jar,xstream-1.4.4.jar,xz-1.2.jar,yuicompressor-2.4.7-standalone.jar,zookeeper-3.3.1.jar
+   os.arch : amd64
+   os.name : Linux
+   os.version : 4.4.0-62-generic
+   package.access : sun.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper.
+   package.definition : sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper.
+   path.separator : :
+   server.loader : 
+   shared.loader : 
+   sun.arch.data.model : 64
+   sun.boot.class.path : /usr/lib/jvm/java-6-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-6-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-6-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-6-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-6-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-6-oracle/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-oracle/jre/classes
+   sun.boot.library.path : /usr/lib/jvm/java-6-oracle/jre/lib/amd64
+   sun.cpu.endian : little
+   sun.cpu.isalist : 
+   sun.io.unicode.encoding : UnicodeLittle
+   sun.java.command : org.apache.catalina.startup.Bootstrap start
+   sun.java.launcher : SUN_STANDARD
+   sun.jnu.encoding : UTF-8
+   sun.management.compiler : HotSpot 64-Bit Tiered Compilers
+   sun.os.patch.level : unknown
+   tomcat.util.buf.StringCache.byte.enabled : true
+   tomcat.util.scan.DefaultJarScanner.jarsToSkip : bootstrap.jar,commons-daemon.jar,tomcat-juli.jar,annotations-api.jar,el-api.jar,jsp-api.jar,servlet-api.jar,websocket-api.jar,catalina.jar,catalina-ant.jar,catalina-ha.jar,catalina-tribes.jar,jasper.jar,jasper-el.jar,ecj-*.jar,tomcat-api.jar,tomcat-util.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-jni.jar,tomcat-spdy.jar,tomcat-i18n-en.jar,tomcat-i18n-es.jar,tomcat-i18n-fr.jar,tomcat-i18n-ja.jar,tomcat-juli-adapters.jar,catalina-jmx-remote.jar,catalina-ws.jar,tomcat-jdbc.jar,tools.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,jstl.jar,geronimo-spec-jaxrpc*.jar,wsdl4j*.jar,ant.jar,ant-junit*.jar,aspectj*.jar,jmx.jar,h2*.jar,hibernate*.jar,httpclient*.jar,jmx-tools.jar,jta*.jar,log4j.jar,log4j-1*.jar,mail*.jar,slf4j*.jar,xercesImpl.jar,xmlParserAPIs.jar,xml-apis.jar,junit.jar,junit-*.jar,hamcrest*.jar,org.hamcrest*.jar,ant-launcher.jar,cobertura-*.jar,asm-*.jar,dom4j-*.jar,icu4j-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,oro-*.jar,servlet-api-*.jar,tagsoup-*.jar,xmlParserAPIs-*.jar,xom-*.jar
+   useNativeSort : true
+   user.country : US
+   user.dir : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/bin
+   user.home : /root
+   user.language : en
+   user.name : root
+   user.timezone : Europe/Kiev
+   webapp.root : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/
+
+Environment variables:
+-------------------
+   CATALINA_OPTS :  -server -Xms1024m -Xmx1024m -XX:MaxPermSize=256m -Djava.awt.headless=true -verbose:gc -XX:+HeapDumpOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Dderby.system.home=/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT/WEB-INF/var/dbdata
+   CATALINA_PID : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/temp/tomcat.pid
+   DISPLAY : :0
+   HOME : /root
+   LANG : en_US.UTF-8
+   LANGUAGE : en
+   LC_ADDRESS : ru_UA.UTF-8
+   LC_IDENTIFICATION : ru_UA.UTF-8
+   LC_MEASUREMENT : ru_UA.UTF-8
+   LC_MONETARY : ru_UA.UTF-8
+   LC_NAME : ru_UA.UTF-8
+   LC_NUMERIC : ru_UA.UTF-8
+   LC_PAPER : ru_UA.UTF-8
+   LC_TELEPHONE : ru_UA.UTF-8
+   LC_TIME : ru_UA.UTF-8
+   LD_LIBRARY_PATH : /usr/lib/jvm/java-6-oracle/jre/lib/amd64/server:/usr/lib/jvm/java-6-oracle/jre/lib/amd64:/usr/lib/jvm/java-6-oracle/jre/../lib/amd64
+   LESSCLOSE : /usr/bin/lesspipe %s %s
+   LESSOPEN : | /usr/bin/lesspipe %s
+   LOGNAME : root
+   LS_COLORS : rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+   MAIL : /var/mail/root
+   NLSPATH : /usr/dt/lib/nls/msg/%L/%N.cat
+   OLDPWD : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0
+   PATH : /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+   PWD : /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/bin
+   SHELL : /bin/bash
+   SHLVL : 1
+   SUDO_COMMAND : /bin/su
+   SUDO_GID : 1000
+   SUDO_UID : 1000
+   SUDO_USER : alex
+   TERM : xterm-256color
+   USER : root
+   USERNAME : root
+   XAUTHORITY : /home/alex/.Xauthority
+   XFILESEARCHPATH : /usr/dt/app-defaults/%L/Dt
+   _ : ./startDigitalFactory.sh
+
+Server configuration (Digital Factory 7.0.0.0 [Elektra] - Community Distribution - Build 49489 - March 28, 2014 12:02:12 PM GMT+02:00):
+---------------------
+   accessManagerPathPermissionCacheMaxSize = 100
+   auth.container.enabled = false
+   auth.cookie.enabled = true
+   characterEncoding = UTF-8
+   cometTimeout = 60
+   considerPreferredLanguageAfterLogin = false
+   db_script = derby_embedded.script
+   default_templates_set = sample-bootstrap-templates
+   disableJsessionIdParameter = true
+   documentConverter.enabled = true
+   documentConverter.officeHome = /usr/lib/libreoffice
+   dumpErrorsToFiles = true
+   felix.gogo.shell.telnet.port = -1
+   fileDumpMaxRegroupingOfPreviousException = 500
+   gitPath = git
+   globalGroupMembershipCheckActivated = false
+   guestGroupResourceKey = label.group.guest
+   guestGroupResourceModuleName = Default Jahia Templates
+   guestUserResourceKey = label.user.guest
+   guestUserResourceModuleName = Default Jahia Templates
+   hibernate.dialect = org.hibernate.dialect.DerbyTenSevenDialect
+   imageMagickPath = /usr/bin
+   imageService = ImageMagickImageService
+   jahia.dm.thumbnails.enabled = true
+   jahia.dm.thumbnails.video.enabled = true
+   jahia.dm.thumbnails.video.ffmpeg = /usr/bin/ffmpeg
+   jahia.dm.viewer.enabled = false
+   jahia.dm.viewer.pdf2swf = 
+   jahia.fileServlet.statisticsEnabled = false
+   jahia.jackrabbit.consistencyCheck = false
+   jahia.jackrabbit.consistencyFix = false
+   jahia.jackrabbit.home = WEB-INF/var/repository
+   jahia.jackrabbit.queryStatsEnabled = true
+   jahia.jackrabbit.reindexOnStartup = false
+   jahia.jackrabbit.searchIndex.autoRepair = true
+   jahia.jackrabbit.searchIndex.enableConsistencyCheck = false
+   jahia.jackrabbit.searchIndex.forceConsistencyCheck = false
+   jahia.jackrabbit.searchIndex.spellChecker.distanceImplementation = org.apache.lucene.search.spell.LevensteinDistance
+   jahia.jackrabbit.searchIndex.spellChecker.minimumScore = 0.7
+   jahia.jcr.maxNameSize = 32
+   jahiaEtcDiskPath = $context/WEB-INF/etc/
+   jahiaFileUploadMaxSize = 104857600
+   jahiaImportsDiskPath = $context/WEB-INF/var/imports/
+   jahiaJCRUserCountLimit = -1
+   jahiaModulesDiskPath = $context/WEB-INF/var/modules/
+   jahiaToolManagerUsername = jahia
+   jahiaVarDiskPath = $context/WEB-INF/var/
+   jahiaWebAppsDeployerBaseURL = http\://localhost\:8080/manager
+   mail_maxRegroupingOfPreviousException = 500
+   maintenanceMode = false
+   maxModulesToGenerateInParallel = 50
+   minimumIntervalAfterLastAutoThreadDump = 60000
+   moduleGenerationThreadDumpToSystemOut = true
+   moduleGenerationTthreadDumpToFile = true
+   moduleGenerationWaitTime = 10000
+   modulesSourcesDiskPath = $context/WEB-INF/var/sources/
+   mvnPath = mvn
+   operatingMode = development
+   org.jahia.multilang.default_language_code = en
+   org.quartz.driverDelegateClass = org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+   permanentMoveForVanityURL = true
+   readOnlyMode = false
+   repositoryDirectoryListingDisabled = false
+   server = tomcat
+   serverHome = /home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat
+   serverVersion = 
+   sessionExpiryTime = 60
+   site.error.enabled = true
+   siteURLPortOverride = 0
+   svnPath = svn
+   tmpContentDiskPath = $context/WEB-INF/var/content/tmp/
+   urlRewriteRemoveCmsPrefix = true
+   urlRewriteSeoRulesEnabled = true
+   urlRewriteUseAbsoluteUrls = true
+   useJstackForThreadDumps = false
+   userManagementGroupNamePattern = [0-9a-z_A-Z\-\{\}]+
+   userManagementUserNamePattern = [0-9a-z_A-Z\-\{\}\.@]+
+
+Heap memory : 54% used
+---------------
+Used      : 543.01 MB (569,387,384 bytes)
+Committed : 1,002.75 MB (1,051,459,584 bytes)
+Max       : 1,002.75 MB (1,051,459,584 bytes)
+
+Non-heap memory : 74% used
+---------------
+Used      : 226.44 MB (237,434,840 bytes)
+Committed : 227 MB (238,026,752 bytes)
+Max       : 304 MB (318,767,104 bytes)
+--------------
+Memory pool details
+--------------
+
+Memory Pool "Code Cache" (Non-heap memory) : 62% used
+---------------
+Used      : 29.73 MB (31,176,128 bytes)
+Committed : 30.19 MB (31,653,888 bytes)
+Max       : 48 MB (50,331,648 bytes)
+
+Memory Pool "PS Eden Space" (Heap memory) : 20% used
+---------------
+Used      : 59.65 MB (62,549,320 bytes)
+Committed : 299.06 MB (313,589,760 bytes)
+Max       : 299.19 MB (313,720,832 bytes)
+
+Memory Pool "PS Survivor Space" (Heap memory) : 59% used
+---------------
+Used      : 12.42 MB (13,025,616 bytes)
+Committed : 21 MB (22,020,096 bytes)
+Max       : 21 MB (22,020,096 bytes)
+
+Memory Pool "PS Old Gen" (Heap memory) : 69% used
+---------------
+Used      : 470.94 MB (493,812,448 bytes)
+Committed : 682.69 MB (715,849,728 bytes)
+Max       : 682.69 MB (715,849,728 bytes)
+
+Memory Pool "PS Perm Gen" (Non-heap memory) : 77% used
+---------------
+Used      : 196.7 MB (206,259,016 bytes)
+Committed : 196.81 MB (206,372,864 bytes)
+Max       : 256 MB (268,435,456 bytes)
+
+Cache status:
+--------------
+ApplicationCache: size=0, successful hits=0, total hits=0, efficiency=0%
+ApplicationContextCache: size=0, successful hits=0, total hits=0, efficiency=0%
+ApplicationEntryPointCache: size=0, successful hits=0, total hits=0, efficiency=0%
+ExternalIdentifierMapping: size=3, successful hits=14, total hits=17, efficiency=82.35%
+FileContentCache: size=0, successful hits=0, total hits=79, efficiency=0%
+FileLastModifiedCache: size=36, successful hits=145, total hits=181, efficiency=80.11%
+HTMLCache: size=0, successful hits=0, total hits=0, efficiency=0%
+HTMLDependenciesCache: size=0, successful hits=0, total hits=86052, efficiency=0%
+HTMLNodeUsersACLs: size=0, successful hits=0, total hits=0, efficiency=0%
+HTMLREGEXPDependenciesCache: size=0, successful hits=0, total hits=0, efficiency=0%
+HTMLRequiredPermissionsCache: size=0, successful hits=0, total hits=0, efficiency=0%
+JCRGroupCache: size=8, successful hits=683, total hits=754, efficiency=90.58%
+JCRGroupMembershipCache: size=1, successful hits=31, total hits=39, efficiency=79.49%
+JCRUserCache: size=8, successful hits=4441, total hits=4574, efficiency=97.09%
+RenderService.TemplatesCache: size=47, successful hits=168, total hits=502, efficiency=33.47%
+WorkflowRuleCache: size=67, successful hits=163, total hits=230, efficiency=70.87%
+org.jahia.groups.siteKeyIDCache: org.jahia.security.matchingPermissions: size=1, successful hits=63, total hits=67, efficiency=94.03%
+org.jahia.security.priviliegesInRolesCache: org.jahia.selfPopulatingReplicatedCache: size=0, successful hits=0, total hits=0, efficiency=0%
+org.jahia.sitesService.siteDefaultLanguageBySiteKey: org.jahia.sitesService.siteKeyByServerNameCache: urlResolverNodePath: size=0, successful hits=13, total hits=25, efficiency=52%
+urlResolverSiteInfo: size=0, successful hits=38, total hits=50, efficiency=76%
+vanityUrlByUrlCache: size=0, successful hits=0, total hits=0, efficiency=0%
+
+Thread status:
+--------------
+2017-02-22 15:09:36
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (20.45-b01)
+
+"ErrorFileDumperThread" nid=1029 state=RUNNABLE []
+java.lang.Thread.State: RUNNABLE
+    at sun.management.ThreadImpl.getThreadInfo1(Native Method)
+    at sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:154)
+    at org.jahia.tools.jvm.ThreadMonitor.dumpThreadInfo(ThreadMonitor.java:378)
+    at org.jahia.tools.jvm.ThreadMonitor.getFullThreadInfo(ThreadMonitor.java:526)
+    at org.jahia.tools.jvm.ThreadMonitor.generateThreadInfo(ThreadMonitor.java:498)
+    at org.jahia.bin.errors.ErrorFileDumper.outputSystemInfo(ErrorFileDumper.java:603)
+    at org.jahia.bin.errors.ErrorFileDumper.outputSystemInfoConsiderLoad(ErrorFileDumper.java:447)
+    at org.jahia.bin.errors.ErrorFileDumper.outputSystemInfo(ErrorFileDumper.java:429)
+    at org.jahia.bin.errors.ErrorFileDumper.generateErrorReport(ErrorFileDumper.java:416)
+    at org.jahia.bin.errors.ErrorFileDumper.performDumpToFile(ErrorFileDumper.java:330)
+    at org.jahia.bin.errors.ErrorFileDumper.access$000(ErrorFileDumper.java:112)
+    at org.jahia.bin.errors.ErrorFileDumper$FileDumperRunnable.run(ErrorFileDumper.java:211)
+    at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #41 - MulticastProcessor-AggregateTask" nid=1027 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    - locked <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+    at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+    at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:874)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:955)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #40 - MulticastProcessor-AggregateTask" nid=1026 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    - locked <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+    at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+    at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:874)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:955)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #39 - MulticastProcessor-AggregateTask" nid=1025 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    - locked <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+    at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+    at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:874)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:955)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #38 - MulticastProcessor-AggregateTask" nid=1023 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    - locked <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+    at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+    at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:874)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:955)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #37 - MulticastProcessor-AggregateTask" nid=1022 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    - locked <0x44d1819a> (a java.util.concurrent.SynchronousQueue$TransferStack)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+    at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+    at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:874)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:955)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Atmosphere-Shared-AsyncOp-1" nid=1020 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x1693c8c2> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x1693c8c2> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Atmosphere-Shared-AsyncOp-0" nid=1011 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x1693c8c2> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x1693c8c2> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-21" nid=993 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at java.net.SocketInputStream.read(SocketInputStream.java:129)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:516)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:501)
+    at org.apache.coyote.http11.Http11Processor.setRequestLineReadTimeout(Http11Processor.java:167)
+    at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:946)
+    at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+    at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-20" nid=992 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x40614422> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x40614422> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+    at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-19" nid=991 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at java.net.SocketInputStream.read(SocketInputStream.java:129)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:516)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:501)
+    at org.apache.coyote.http11.Http11Processor.setRequestLineReadTimeout(Http11Processor.java:167)
+    at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:946)
+    at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+    at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-18" nid=990 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x40614422> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x40614422> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+    at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-17" nid=989 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at java.net.SocketInputStream.read(SocketInputStream.java:129)
+    at org.apache.coyote.http11.upgrade.UpgradeBioProcessor.read(UpgradeBioProcessor.java:85)
+    at org.apache.catalina.websocket.WsFrame.nextFrame(WsFrame.java:218)
+    at org.apache.catalina.websocket.WsInputStream.nextFrame(WsInputStream.java:72)
+    at org.apache.catalina.websocket.StreamInbound.onData(StreamInbound.java:122)
+    at org.apache.coyote.http11.upgrade.UpgradeProcessor.upgradeDispatch(UpgradeProcessor.java:88)
+    at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+    at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:313)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-16" nid=988 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at java.net.SocketInputStream.read(SocketInputStream.java:129)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:516)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:501)
+    at org.apache.coyote.http11.Http11Processor.setRequestLineReadTimeout(Http11Processor.java:167)
+    at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:946)
+    at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+    at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-15" nid=987 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x40614422> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x40614422> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+    at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-14" nid=986 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at java.net.SocketInputStream.read(SocketInputStream.java:129)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:516)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:501)
+    at org.apache.coyote.http11.Http11Processor.setRequestLineReadTimeout(Http11Processor.java:167)
+    at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:946)
+    at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+    at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-13" nid=985 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at java.net.SocketInputStream.read(SocketInputStream.java:129)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:516)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:501)
+    at org.apache.coyote.http11.Http11Processor.setRequestLineReadTimeout(Http11Processor.java:167)
+    at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:946)
+    at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+    at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"MultiThreadedHttpConnectionManager cleanup" nid=982 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x31c03533> (a java.lang.ref.ReferenceQueue$Lock)
+    - locked <0x31c03533> (a java.lang.ref.ReferenceQueue$Lock)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+    at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$ReferenceQueueThread.run(MultiThreadedHttpConnectionManager.java:1122)
+
+"ICEpdf-thread-image-pool" nid=874 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x41e4c0c9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x41e4c0c9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"ICEpdf-thread-image-pool" nid=870 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x41e4c0c9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x41e4c0c9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"ICEpdf-thread-image-pool" nid=509 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x41e4c0c9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x41e4c0c9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"ICEpdf-thread-image-pool" nid=505 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x41e4c0c9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x41e4c0c9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-exec-9" nid=233 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at java.net.SocketInputStream.read(SocketInputStream.java:129)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:516)
+    at org.apache.coyote.http11.InternalInputBuffer.fill(InternalInputBuffer.java:501)
+    at org.apache.coyote.http11.Http11Processor.setRequestLineReadTimeout(Http11Processor.java:167)
+    at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:946)
+    at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+    at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"ajp-bio-8009-AsyncTimeout" nid=222 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    at java.lang.Thread.sleep(Native Method)
+    at org.apache.tomcat.util.net.JIoEndpoint$AsyncTimeout.run(JIoEndpoint.java:151)
+    at java.lang.Thread.run(Thread.java:662)
+
+"ajp-bio-8009-Acceptor-0" nid=221 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.PlainSocketImpl.socketAccept(Native Method)
+    at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:408)
+    at java.net.ServerSocket.implAccept(ServerSocket.java:462)
+    at java.net.ServerSocket.accept(ServerSocket.java:430)
+    at org.apache.tomcat.util.net.DefaultServerSocketFactory.acceptSocket(DefaultServerSocketFactory.java:60)
+    at org.apache.tomcat.util.net.JIoEndpoint$Acceptor.run(JIoEndpoint.java:219)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-AsyncTimeout" nid=220 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    at java.lang.Thread.sleep(Native Method)
+    at org.apache.tomcat.util.net.JIoEndpoint$AsyncTimeout.run(JIoEndpoint.java:151)
+    at java.lang.Thread.run(Thread.java:662)
+
+"http-bio-8080-Acceptor-0" nid=219 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.PlainSocketImpl.socketAccept(Native Method)
+    at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:408)
+    at java.net.ServerSocket.implAccept(ServerSocket.java:462)
+    at java.net.ServerSocket.accept(ServerSocket.java:430)
+    at org.apache.tomcat.util.net.DefaultServerSocketFactory.acceptSocket(DefaultServerSocketFactory.java:60)
+    at org.apache.tomcat.util.net.JIoEndpoint$Acceptor.run(JIoEndpoint.java:219)
+    at java.lang.Thread.run(Thread.java:662)
+
+"ContainerBackgroundProcessor[StandardEngine[Catalina]]" nid=218 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    at java.lang.Thread.sleep(Native Method)
+    at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1508)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Atmosphere-Scheduler-1" nid=213 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x112cedeb> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x112cedeb> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Atmosphere-Scheduler-0" nid=210 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x112cedeb> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x112cedeb> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Timer-1" nid=209 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x1cb7e81c> (a java.util.TaskQueue)
+    - locked <0x1cb7e81c> (a java.util.TaskQueue)
+    at java.lang.Object.wait(Native Method)
+    at java.util.TimerThread.mainLoop(Timer.java:509)
+    at java.util.TimerThread.run(Timer.java:462)
+
+"QuartzScheduler_scheduler-alex-Lenovo-G7801487766788985_MisfireHandler" nid=208 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    at java.lang.Thread.sleep(Native Method)
+    at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:3963)
+
+"Camel (jahiaNotificationContext) thread #19 - seda://logMsgs" nid=205 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #18 - seda://logMsgs" nid=204 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0045xternal%0049dentifier%004dapping.data" nid=203 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x7ee6e810> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x7ee6e810> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #17 - seda://logMsgs" nid=201 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #16 - seda://logMsgs" nid=200 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #15 - seda://logMsgs" nid=199 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #14 - seda://logMsgs" nid=198 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"fileinstall-/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT//WEB-INF/var/modules" nid=110 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x72d65468> (a org.apache.felix.fileinstall.internal.DirectoryWatcher)
+    - locked <0x72d65468> (a org.apache.felix.fileinstall.internal.DirectoryWatcher)
+    at java.lang.Object.wait(Native Method)
+    at org.apache.felix.fileinstall.internal.DirectoryWatcher.run(DirectoryWatcher.java:299)
+
+"FelixFrameworkWiring" nid=195 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x698db386> (a java.util.ArrayList)
+    - locked <0x698db386> (a java.util.ArrayList)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at org.apache.felix.framework.FrameworkWiringImpl.run(FrameworkWiringImpl.java:162)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #11 - seda://logMsgs" nid=179 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #10 - seda://logMsgs" nid=178 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #7 - seda://logMsgs" nid=175 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #6 - seda://logMsgs" nid=174 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x6de794fe> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Java2D Disposer" nid=138 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x5605588d> (a java.lang.ref.ReferenceQueue$Lock)
+    - locked <0x5605588d> (a java.lang.ref.ReferenceQueue$Lock)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+    at sun.java2d.Disposer.run(Disposer.java:127)
+    at java.lang.Thread.run(Thread.java:662)
+
+"fileinstall-/home/alex/DigitalFactory-CommunityDistribution-7.0.0.0/tomcat/webapps/ROOT//WEB-INF/var/bundles" nid=109 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x78f8bd19> (a org.apache.felix.fileinstall.internal.DirectoryWatcher)
+    - locked <0x78f8bd19> (a org.apache.felix.fileinstall.internal.DirectoryWatcher)
+    at java.lang.Object.wait(Native Method)
+    at org.apache.felix.fileinstall.internal.DirectoryWatcher.run(DirectoryWatcher.java:299)
+
+"CM Event Dispatcher" nid=107 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x1246f25b> (a java.util.LinkedList)
+    - locked <0x1246f25b> (a java.util.LinkedList)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at org.apache.felix.cm.impl.UpdateThread.run(UpdateThread.java:77)
+    at java.lang.Thread.run(Thread.java:662)
+
+"CM Configuration Updater" nid=106 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x6fd13dbc> (a java.util.LinkedList)
+    - locked <0x6fd13dbc> (a java.util.LinkedList)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at org.apache.felix.cm.impl.UpdateThread.run(UpdateThread.java:77)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Thread-28" nid=105 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x122c3afe> (a java.util.ArrayList)
+    - locked <0x122c3afe> (a java.util.ArrayList)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at org.apache.felix.log.LogListenerThread.run(LogListenerThread.java:139)
+
+"Spring DM Context Creation Timer" nid=103 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x15d50304> (a java.util.TaskQueue)
+    - locked <0x15d50304> (a java.util.TaskQueue)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at java.util.TimerThread.mainLoop(Timer.java:483)
+    at java.util.TimerThread.run(Timer.java:462)
+
+"Spring DM Context Creation Timer" nid=102 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x53b906ce> (a java.util.TaskQueue)
+    - locked <0x53b906ce> (a java.util.TaskQueue)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at java.util.TimerThread.mainLoop(Timer.java:483)
+    at java.util.TimerThread.run(Timer.java:462)
+
+"FelixStartLevel" nid=101 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x186de953> (a java.util.ArrayList)
+    - locked <0x186de953> (a java.util.ArrayList)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at org.apache.felix.framework.FrameworkStartLevelImpl.run(FrameworkStartLevelImpl.java:279)
+    at java.lang.Thread.run(Thread.java:662)
+
+"FelixDispatchQueue" nid=99 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x57f154ac> (a java.util.ArrayList)
+    - locked <0x57f154ac> (a java.util.ArrayList)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at org.apache.felix.framework.util.EventDispatcher.run(EventDispatcher.java:1063)
+    at org.apache.felix.framework.util.EventDispatcher.access$000(EventDispatcher.java:54)
+    at org.apache.felix.framework.util.EventDispatcher$1.run(EventDispatcher.java:101)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #5 - seda://mailUsers" nid=97 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x24ee154f> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x24ee154f> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:424)
+    at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:191)
+    at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:147)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #4 - seda://logMsgs" nid=96 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:424)
+    at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:191)
+    at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:147)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #3 - seda://logMsgs" nid=95 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:424)
+    at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:191)
+    at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:147)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #2 - seda://logMsgs" nid=94 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:424)
+    at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:191)
+    at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:147)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #1 - seda://logMsgs" nid=93 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:424)
+    at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:191)
+    at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:147)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Camel (jahiaNotificationContext) thread #0 - seda://logMsgs" nid=92 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0xab9087a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:424)
+    at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:191)
+    at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:147)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0046ile%004cast%004dodified%0043ache.data" nid=81 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x79db8715> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x79db8715> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0052ender%0053ervice%002e%0054emplates%0043ache.data" nid=80 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x3b81b233> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x3b81b233> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"ObservationManager" nid=75 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x3fda50ca> (a org.apache.commons.collections.buffer.BlockingBuffer)
+    - locked <0x3fda50ca> (a org.apache.commons.collections.buffer.BlockingBuffer)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at org.apache.commons.collections.buffer.BlockingBuffer.remove(BlockingBuffer.java:192)
+    at org.apache.jackrabbit.core.observation.ObservationDispatcher.run(ObservationDispatcher.java:153)
+    at java.lang.Thread.run(Thread.java:662)
+
+"jackrabbit-pool-4" nid=74 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x15ee1e86> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x15ee1e86> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"org%002ejahia%002esecurity%002ematching%0050ermissions.data" nid=73 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x4415faa9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x4415faa9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"jackrabbit-pool-3" nid=70 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x15ee1e86> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x15ee1e86> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"jackrabbit-pool-2" nid=69 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x15ee1e86> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x15ee1e86> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Thread-10" nid=68 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x7efb902a> (a java.util.LinkedList)
+    - locked <0x7efb902a> (a java.util.LinkedList)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at com.sun.star.lib.util.AsynchronousFinalizer$1.run(AsynchronousFinalizer.java:86)
+
+"DynamicPooledExecutor" nid=67 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x35b5f687> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x35b5f687> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"ObservationManager" nid=66 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x3d4c349d> (a org.apache.commons.collections.buffer.BlockingBuffer)
+    - locked <0x3d4c349d> (a org.apache.commons.collections.buffer.BlockingBuffer)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at org.apache.commons.collections.buffer.BlockingBuffer.remove(BlockingBuffer.java:192)
+    at org.apache.jackrabbit.core.observation.ObservationDispatcher.run(ObservationDispatcher.java:153)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Transient File Reaper" nid=63 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x56124edb> (a java.lang.ref.ReferenceQueue$Lock)
+    - locked <0x56124edb> (a java.lang.ref.ReferenceQueue$Lock)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+    at org.apache.jackrabbit.util.TransientFileFactory$ReaperThread.run(TransientFileFactory.java:192)
+
+"jackrabbit-pool-1" nid=62 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x15ee1e86> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x15ee1e86> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"notificationQueueProcessor" nid=61 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    at java.lang.Thread.sleep(Native Method)
+    at org.jahia.services.notification.CamelNotificationService.run(CamelNotificationService.java:188)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0041pplication%0045ntry%0050oint%0043ache.data" nid=60 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x4bf73802> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x4bf73802> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0041pplication%0043ache.data" nid=59 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x537e3244> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x537e3244> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0041pplication%0043ontext%0043ache.data" nid=58 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x216392f> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x216392f> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"MessageDispatcher" nid=57 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at java.net.SocketInputStream.read(SocketInputStream.java:129)
+    at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+    at java.io.BufferedInputStream.read1(BufferedInputStream.java:258)
+    at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+    at com.sun.star.lib.connections.socket.SocketConnection.read(SocketConnection.java:155)
+    at com.sun.star.lib.uno.bridges.java_remote.XConnectionInputStream_Adapter.read(XConnectionInputStream_Adapter.java:56)
+    at java.io.DataInputStream.readInt(DataInputStream.java:370)
+    at com.sun.star.lib.uno.protocols.urp.urp.readBlock(urp.java:346)
+    at com.sun.star.lib.uno.protocols.urp.urp.readMessage(urp.java:86)
+    at com.sun.star.lib.uno.bridges.java_remote.java_remote_bridge$MessageDispatcher.run(java_remote_bridge.java:109)
+
+"process reaper" nid=55 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.lang.UNIXProcess.waitForProcessExit(Native Method)
+    at java.lang.UNIXProcess.access$900(UNIXProcess.java:20)
+    at java.lang.UNIXProcess$1$1.run(UNIXProcess.java:132)
+
+"OfficeProcessThread-0" nid=50 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x1043dbb> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x1043dbb> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"url%0052esolver%0053ite%0049nfo.data" nid=49 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x3d70c082> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x3d70c082> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"url%0052esolver%004eode%0050ath.data" nid=48 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x356eb651> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x356eb651> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"vanity%0055rl%0042y%0055rl%0043ache.data" nid=47 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x77839b3e> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x77839b3e> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"rules-timer" nid=46 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x614540be> (a java.util.TaskQueue)
+    - locked <0x614540be> (a java.util.TaskQueue)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at java.util.TimerThread.mainLoop(Timer.java:483)
+    at java.util.TimerThread.run(Timer.java:462)
+
+"rules-timer" nid=45 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x99dabd6> (a java.util.TaskQueue)
+    - locked <0x99dabd6> (a java.util.TaskQueue)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at java.util.TimerThread.mainLoop(Timer.java:483)
+    at java.util.TimerThread.run(Timer.java:462)
+
+"%0048%0054%004d%004c%0052equired%0050ermissions%0043ache.data" nid=44 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x4e7c7388> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x4e7c7388> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0048%0054%004d%004c%004eode%0055sers%0041%0043%004cs.data" nid=43 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x4c850df9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x4c850df9> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%004a%0043%0052%0047roup%004dembership%0043ache.data" nid=38 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x33587dae> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x33587dae> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%004a%0043%0052%0047roup%0043ache.data" nid=37 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x76a344d7> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x76a344d7> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"ramScheduler_QuartzSchedulerThread" nid=35 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x58fcbc1a> (a java.lang.Object)
+    - locked <0x58fcbc1a> (a java.lang.Object)
+    at java.lang.Object.wait(Native Method)
+    at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:295)
+
+"ramScheduler_Worker-3" nid=34 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x69fd45f> (a org.quartz.simpl.SimpleThreadPool$WorkerThread)
+    - locked <0x69fd45f> (a org.quartz.simpl.SimpleThreadPool$WorkerThread)
+    at java.lang.Object.wait(Native Method)
+    at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:543)
+
+"ramScheduler_Worker-2" nid=33 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x38a17c9a> (a org.quartz.simpl.SimpleThreadPool$WorkerThread)
+    - locked <0x38a17c9a> (a org.quartz.simpl.SimpleThreadPool$WorkerThread)
+    at java.lang.Object.wait(Native Method)
+    at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:543)
+
+"ramScheduler_Worker-1" nid=32 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x71fb7f81> (a org.quartz.simpl.SimpleThreadPool$WorkerThread)
+    - locked <0x71fb7f81> (a org.quartz.simpl.SimpleThreadPool$WorkerThread)
+    at java.lang.Object.wait(Native Method)
+    at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:543)
+
+"scheduler_QuartzSchedulerThread" nid=30 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x3670289d> (a java.lang.Object)
+    - locked <0x3670289d> (a java.lang.Object)
+    at java.lang.Object.wait(Native Method)
+    at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:410)
+
+"scheduler_Worker-1" nid=29 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x67730b92> (a org.quartz.simpl.SimpleThreadPool$WorkerThread)
+    - locked <0x67730b92> (a org.quartz.simpl.SimpleThreadPool$WorkerThread)
+    at java.lang.Object.wait(Native Method)
+    at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:543)
+
+"rules-timer" nid=28 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x7d7a7756> (a java.util.TaskQueue)
+    - locked <0x7d7a7756> (a java.util.TaskQueue)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at java.util.TimerThread.mainLoop(Timer.java:483)
+    at java.util.TimerThread.run(Timer.java:462)
+
+"jcrsession-loadaverage" nid=27 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    at java.lang.Thread.sleep(Native Method)
+    at org.jahia.utils.LoadAverage.run(LoadAverage.java:122)
+    at java.lang.Thread.run(Thread.java:662)
+
+"request-loadaverage" nid=26 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    at java.lang.Thread.sleep(Native Method)
+    at org.jahia.utils.LoadAverage.run(LoadAverage.java:122)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0057orkflow%0052ule%0043ache.data" nid=25 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x7330ef75> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x7330ef75> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%004a%0043%0052%0055ser%0043ache.data" nid=24 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x11b92568> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x11b92568> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0048%0054%004d%004c%0052%0045%0047%0045%0058%0050%0044ependencies%0043ache.data" nid=22 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x1246d7ef> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x1246d7ef> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0048%0054%004d%004c%0043ache.data" nid=21 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x690a9548> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x690a9548> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Statistics Thread-org.jahia.ehcachemanager-1" nid=20 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x35cedfd8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x35cedfd8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"%0048%0054%004d%004c%0044ependencies%0043ache.data" nid=19 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x20c9f981> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    - locked <0x20c9f981> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2025)
+    at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:609)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:602)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:957)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:917)
+    at java.lang.Thread.run(Thread.java:662)
+
+"org.jahia.ehcachemanager" nid=18 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x2c1b94f8> (a java.util.TaskQueue)
+    - locked <0x2c1b94f8> (a java.util.TaskQueue)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at java.util.TimerThread.mainLoop(Timer.java:483)
+    at java.util.TimerThread.run(Timer.java:462)
+
+"Attach Listener" nid=17 state=RUNNABLE []
+java.lang.Thread.State: RUNNABLE
+
+"FileWatchdog" nid=16 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    at java.lang.Thread.sleep(Native Method)
+    at org.apache.log4j.helpers.FileWatchdog.run(FileWatchdog.java:104)
+
+"derby.rawStoreDaemon" nid=15 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x46d13c67> (a org.apache.derby.impl.services.daemon.BasicDaemon)
+    - locked <0x46d13c67> (a org.apache.derby.impl.services.daemon.BasicDaemon)
+    at java.lang.Object.wait(Native Method)
+    at org.apache.derby.impl.services.daemon.BasicDaemon.rest(Unknown Source)
+    at org.apache.derby.impl.services.daemon.BasicDaemon.run(Unknown Source)
+    at java.lang.Thread.run(Thread.java:662)
+
+"Timer-0" nid=14 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x52d4b283> (a java.util.TaskQueue)
+    - locked <0x52d4b283> (a java.util.TaskQueue)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at java.util.TimerThread.mainLoop(Timer.java:483)
+    at java.util.TimerThread.run(Timer.java:462)
+
+"PoolCleaner[1628776250:1487766769402]" nid=13 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0xa13e0f1> (a java.util.TaskQueue)
+    - locked <0xa13e0f1> (a java.util.TaskQueue)
+    at java.lang.Object.wait(Native Method)
+    at java.util.TimerThread.mainLoop(Timer.java:509)
+    at java.util.TimerThread.run(Timer.java:462)
+
+"GC Daemon" nid=10 state=TIMED_WAITING []
+java.lang.Thread.State: TIMED_WAITING
+    - waiting on <0x1f14f362> (a sun.misc.GC$LatencyLock)
+    - locked <0x1f14f362> (a sun.misc.GC$LatencyLock)
+    at java.lang.Object.wait(Native Method)
+    at sun.misc.GC$Daemon.run(GC.java:100)
+
+"Signal Dispatcher" nid=4 state=RUNNABLE []
+java.lang.Thread.State: RUNNABLE
+
+"Finalizer" nid=3 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x1876b6df> (a java.lang.ref.ReferenceQueue$Lock)
+    - locked <0x1876b6df> (a java.lang.ref.ReferenceQueue$Lock)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+    at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:171)
+
+"Reference Handler" nid=2 state=WAITING []
+java.lang.Thread.State: WAITING
+    - waiting on <0x19dff705> (a java.lang.ref.Reference$Lock)
+    - locked <0x19dff705> (a java.lang.ref.Reference$Lock)
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:485)
+    at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:116)
+
+"main" nid=1 state=RUNNABLE (running in native) []
+java.lang.Thread.State: RUNNABLE
+    at java.net.PlainSocketImpl.socketAccept(Native Method)
+    at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:408)
+    at java.net.ServerSocket.implAccept(ServerSocket.java:462)
+    at java.net.ServerSocket.accept(ServerSocket.java:430)
+    at org.apache.catalina.core.StandardServer.await(StandardServer.java:451)
+    at org.apache.catalina.startup.Catalina.await(Catalina.java:777)
+    at org.apache.catalina.startup.Catalina.start(Catalina.java:723)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+    at java.lang.reflect.Method.invoke(Method.java:597)
+    at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:321)
+    at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+
+
+<EndOfDump>
+
+
+Deadlock status:
+Dead lock detection already in progress in another thread, will not report
+
+Request load average:
+---------------------
+Over one minute=0.05270997060526628 Over five minute=0.01953964984299002 Over fifteen minute=0.06374487611105918
+
+
+Depending on the severity of this error, server may still be operational or not. Please check your
+installation as soon as possible.
+
+Yours Faithfully, 
+    Server Notification Service
